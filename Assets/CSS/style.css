@@ -7,86 +7,138 @@ header {
   padding: 67px 0px;
 }
 
-header > h1 {
+header h1 {
   color: #ffffff;
   font-size: 36px;
   font-weight: 800;
+  font-family: "open-sans";
   text-align: center;
   margin: 0px 0px 40px 0px;
 }
 
-header > ul {
+header ul {
   margin: 0px;
   padding: 0px;
   text-align: center;
   list-style: none;
 }
 
-ul > li {
+header ul li {
   display: inline;
   margin: 0px 5px;
 }
 
-li > a {
+header ul li a {
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
 }
 
-section > h3 {
+header ul li a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h3 {
+  color: #986D64;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "open-sans";
   margin: 0 0 40px 0;
 }
 
+main {
+  padding: 0 80px 20px 80px;
+}
+
 section {
-  padding: 60px 80px;
+  margin: 60px 0;
+  padding-bottom: 60px;
+  border-bottom: 2px solid #808080;
 }
 
-#about > p {
-  float: right;
-  width: 60%;
+section:last-child {
+  border-bottom: 0;
 }
 
-#about > div {
-  width: 40%;
-  display: inline-block;
+section p {
+  color: #4A4A4A;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "open-sans";
 }
 
-#about > div > img {
+#about_image {
+  display: block;
+  margin: 0 auto;
   width: 70%;
 }
 
-#project-1 {
-  display: inline-block;
-  width: 32%;
-}
-
-#project-1 > a > img {
+#projects img {
   border: 2px solid #065ae8;
-  width: 95%;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
 }
 
-#project-2 {
-  display: inline-block;
-  width: 32%;
+@media (max-width: 768px) {
+  h5 {
+    padding-bottom: 80px;
+  }
 }
 
-#project-2 > a > img {
-  border: 2px solid #065ae8;
-  width: 95%;
+@media (max-width: 768px) {
+  section#projects:last-child {
+    border-bottom: 10px;
+  }
 }
 
-#project-3 {
-  display: inline-block;
-  width: 32%;
-}
-
-#project-3 > a > img {
-  border: 2px solid #065ae8;
-  width: 95%;
-}
-
-section > div > a > h5 {
-  margin: 40px 0 60px 0;
+#projects h5 {
+  color: #F1634F;
+  text-decoration: none;
+  margin: 40px 0 0 0;
   text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  font-family: "open-sans";
+}
+
+#projects a:hover {
+  text-decoration: none;
+  color: #F1634F;
+}
+
+
+section > h4 {
+  margin: 0 0 20px 0;
+}
+
+footer {
+  background-color: #F1634F;
+  padding: 45px 0;
+}
+
+footer ul {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0px 5px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer ul li a:hover {
+  text-decoration: none;
+  color: #ffffff;
 }
